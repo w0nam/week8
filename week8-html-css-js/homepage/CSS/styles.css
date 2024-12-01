@@ -1,0 +1,42 @@
+:root {
+    background: #181818;
+}
+
+header {
+    background: #181818;
+}
+
+body {
+    background: #181818;
+    color: #F3F3F3;
+}
+
+.header-components {
+    display: flex;
+    flex-wrap: column, nowrap;
+    justify-content: start;
+    color: #F3F3F3;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+}
+
+#header-bar {
+    background: #5A3737;
+    margin: 10px;
+}
+
+.body-components {
+    display: flex;
+    justify-content: flex-end;
+    color: #F3F3F3;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+}
+.ornaments {
+    color: #F3F3F3;
+    size: 1dvh;
+}
