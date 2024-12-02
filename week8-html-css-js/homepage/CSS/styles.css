@@ -1,3 +1,4 @@
+/*-- GLOBAL DESKTOP RULES --*/
 :root {
     background: #181818;
 }
@@ -11,32 +12,230 @@ body {
     color: #F3F3F3;
 }
 
-.header-components {
-    display: flex;
-    flex-wrap: column, nowrap;
-    justify-content: start;
+a:link, a:visited, a:active {
+    text-decoration: none;
     color: #F3F3F3;
-    font-family: "Montserrat", sans-serif;
-    padding-top: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 15px;
-    border-radius: 10px;
 }
 
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 20px;
+    color: #a3a3a3;
+}
+
+
+/*-- HEADER STYLING --*/
+/*-- Header Top Bar --*/
 #header-bar {
+    size: 15dvh;
     background: #5A3737;
-    margin: 10px;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+}
+/*-- First Container --*/
+.header-components-1 {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-items: start;
+    padding: 10px;
+    flex-grow: 1;
+}
+/*-- Title (in first container) --*/
+#header-title {
+    font-size: 4dvw;
+}
+/*-- Second Container --*/
+.header-components-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    align-content: space-evenly;
+    padding: 10px;
+    font-size: 2dvw;
 }
 
-.body-components {
+
+/*-- BODY STYLING --*/
+/*-- Main styling properties --*/
+.main-content {
     display: flex;
-    justify-content: flex-end;
-    color: #F3F3F3;
-    font-family: "Montserrat", sans-serif;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+/*-- First container --*/
+.body-components-1 {
+    margin: 15px;
     padding: 10px;
 }
-.ornaments {
-    color: #F3F3F3;
-    size: 1dvh;
+/*-- Title (in first container) --*/
+#body-title {
+    font-size: 5dvw;
+}
+/*-- Praragraph (in first container) --*/
+#body-p {
+    font-size: 2dvw;
+}
+
+/*-- Second Container --*/
+.body-components-2 {
+    margin: 15px;
+    padding: 10px;
+}
+
+/*-- MISCELLANIOUS --*/
+#image-cv {
+    border-radius: 10px;
+    padding: 15px;
+    max-width: fit-content;
+}
+
+/*-- MOBILE SPECIFIC RULES --*/
+/*-- Galaxy Z fold Form Factor --*/
+@media only screen and (max-width: 768px) {
+    /*-- HEADER STYLING --*/
+    /*-- Header Top Bar --*/
+    #header-bar {
+        background: #5A3737;
+        border-radius: 10px;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        flex-grow: 1;
+    }
+    /*-- Title (in first container) --*/
+    #header-title {
+        font-size: 10dvw;
+    }
+    /*-- First Container --*/
+    .header-components-1 {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-items: start;
+        flex-grow: 1;
+    }
+    /*-- Second Container --*/
+    .header-components-2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: flex-start;
+        font-size: 5dvw;
+    }
+
+    /*-- BODY STYLING --*/
+    /*-- Main styling properties --*/
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    /*-- First container --*/
+    .body-components-1 {
+        margin: 15px;
+        padding: 10px;
+    }
+    /*-- Title (in first container) --*/
+    #body-title {
+        font-size: 5dvw;
+    }
+    /*-- Praragraph (in first container) --*/
+    #body-p {
+        font-size: 2dvw;
+    }
+
+    /*-- Second Container --*/
+    .body-components-2 {
+        margin: 15px;
+        padding: 10px;
+    }
+
+    /*-- MISCELLANIOUS --*/
+    #image-cv {
+        border-radius: 10px;
+        padding: 15px;
+        max-width: fit-content;
+    }
+}
+/*-- Galaxy Z Fold Form Factor --*/ 
+@media only screen and (min-width: 769px) {
+    /*-- HEADER STYLING --*/
+    /*-- Header Top Bar --*/
+    #header-bar {
+        size: 15dvh;
+        background: #5A3737;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        flex-grow: 1;
+    }
+    /*-- First Container --*/
+    .header-components-1 {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        align-items: start;
+        padding: 5px;
+        flex-grow: 1;
+    }
+    /*-- Title (in first container) --*/
+    #header-title {
+        font-size: 4dvw;
+    }
+    /*-- Second Container --*/
+    .header-components-2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        align-content: space-evenly;
+        padding: 10px;
+        font-size: 2dvw;
+    }
+
+
+    /*-- BODY STYLING --*/
+    /*-- Main styling properties --*/
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    /*-- First container --*/
+    .body-components-1 {
+        margin: 15px;
+        padding: 10px;
+    }
+    /*-- Title (in first container) --*/
+    #body-title {
+        font-size: 5dvw;
+    }
+    /*-- Praragraph (in first container) --*/
+    #body-p {
+        font-size: 2dvw;
+    }
+
+    /*-- Second Container --*/
+    .body-components-2 {
+        margin: 15px;
+        padding: 10px;
+    }
+
+    /*-- MISCELLANIOUS --*/
+    #image-cv {
+        border-radius: 10px;
+        padding: 15px;
+        max-width: fit-content;
+    }
 }
