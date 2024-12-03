@@ -1,0 +1,97 @@
+header {
+    background: var(--dark-theme-header-color);
+}
+
+body {
+    background: var(--dark-theme-background-color);
+    color: var(--text-color);
+    /* Add media query for dark mode */
+    @media (prefers-color-scheme: dark) {
+        --theme-color: #F3F3F3;
+        --text-color: #181818;
+        background: var(--dark-theme-background-color);
+        color: var(--dark-theme-text-color);
+    }
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: var(--dark-theme-text-color);
+}
+
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 20px;
+    color: #939393;
+}
+
+/*-- HEADER STYLING --*/
+#header-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    background: var(--dark-theme-header-color);
+    color: var(--dark-theme-text-color);
+    border-radius: 12px;
+    margin: 15px;
+    padding: 10px;
+}
+
+#toggle-mode {
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    /* Dark mode toggle icon */
+    @media (prefers-color-scheme: dark) {
+        color: #F3F3F3; /* White for dark mode */
+    }
+}
+
+/*-- HEADER CONTENT --*/
+#header-content {
+    padding: 20px;
+    background-color: var(--theme-color);
+    color: var(--text-color);
+
+    /* Add light mode text color override */
+    @media (prefers-color-scheme: light) {
+        color: #000; /* Black for light mode */
+    }
+}
+
+/*-- MISCELLANIOUS --*/
+#image-cv {
+    border-radius: 10px;
+    padding: 15px;
+    max-width: fit-content;
+
+    /* Add light mode background color override */
+    @media (prefers-color-scheme: light) {
+        background-color: #F7F7F7; /* Light gray for light mode */
+    }
+}
+
+/*-- DARK MODE TOGGLE --*/
+#dark-mode-toggle {
+
+    font-size: 24px;
+    cursor: pointer;
+
+    /* Dark mode toggle icon */
+    @media (prefers-color-scheme: dark) {
+        color: #F3F3F3; /* White for dark mode */
+    }
+}
+
+/*-- LIGHT MODE TOGGLE --*/
+#light-mode-toggle {
+    font-size: 24px;
+    cursor: pointer;
+
+    /* Light mode toggle icon */
+    @media (prefers-color-scheme: light) {
+        color: #181818; /* Dark gray for light mode */
+    }
+}
