@@ -23,4 +23,4 @@ Le design doit être efficace et rapide sur plusieurs plateforme et seras tester
 DesignDetective est un projet sur lequel je travaille de manière à le rendre en tant que projet final à Harvard afin de complèter mon années et d'obtenir mon diplôme.
 Je vais me servir de se site vitrine afin de présenter mon projet (présentation vidéos/site vitrine requis par les professeur de Harvard). Je continuerais sûrement de travailler sur mon projet dans le futur et tenterais de le ship pour de vria, sur de vrais serveur et autres quand le temps, la demande et les moyens me le permetteront.
 
-## Merci d'avoir lu le ReadMe, au plaisir d'entretenir avec vous. 🌈
+## Merci d'avoir lu le ReadMe, au plaisir de m'entretenir avec vous. 🌈
