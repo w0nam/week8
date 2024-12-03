@@ -3,13 +3,13 @@
 ## 🖊️ - Préambule:
 
 Je dois rendre un site web pour compléter un module de ma formation. (CS50x de chez Harvard.)
-Le design doit être efficace et rapide sur plusieurs plateforme et seras tester par les professeurs de Harvard avec différents critère:
+Le design doit être efficace et rapide sur plusieurs platefrome, (téléphone, tablette. Aussi Firefox & Chrome.), et seras tester par les professeurs de Harvard avec différents critère:
 
 ### 📚 - Devoir:
 * Doit comporter 4x fichier HTML, peux importe leurs natures / utilités / design. index.html obligatoire.
 * Dois comporter 10x tags HTML minimum. Au travers de tout les fichier HTML.
 * Dois comporter un CSS qui met en pages de manière cohérente les différents éléments / pages.
-* Dois implémenter un design résponsif sur téléphone, Tablette, Ordinateur et Télévision. (différents viewports, gérer par des règles CSS, sûrement fait avec un règles JavaScript plus tard.)
+* Dois implémenter un design résponsif sur téléphone, Tablette, Ordinateur et Télévision. (différents viewports, gérer par des règles CSS.)
 * Dois comporter du JavaScript avec des events listener et de la logique. (transition de page, Contact form, peu importe)
 * Dois comporter des élément de BootStrap. (bibliothèque CSS qui m'est inconnue).
 
